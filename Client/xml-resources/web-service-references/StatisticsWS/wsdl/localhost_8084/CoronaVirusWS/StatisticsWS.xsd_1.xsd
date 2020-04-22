@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://statistics.me.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://statistics.me.org/">
+
+<xs:element name="getCountryData" type="tns:getCountryData" />
+
+<xs:element name="getCountryDataResponse" type="tns:getCountryDataResponse" />
+
+<xs:element name="getGlobalData" type="tns:getGlobalData" />
+
+<xs:element name="getGlobalDataResponse" type="tns:getGlobalDataResponse" />
+
+<xs:element name="getMostDeaths" type="tns:getMostDeaths" />
+
+<xs:element name="getMostDeathsResponse" type="tns:getMostDeathsResponse" />
+
+<xs:element name="getMostInfected" type="tns:getMostInfected" />
+
+<xs:element name="getMostInfectedResponse" type="tns:getMostInfectedResponse" />
+
+<xs:element name="getMostNewCases" type="tns:getMostNewCases" />
+
+<xs:element name="getMostNewCasesResponse" type="tns:getMostNewCasesResponse" />
+
+<xs:complexType name="getGlobalData">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getGlobalDataResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMostDeaths">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getMostDeathsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMostNewCases">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getMostNewCasesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCountryData">
+<xs:sequence>
+<xs:element name="country" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCountryDataResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMostInfected">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getMostInfectedResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

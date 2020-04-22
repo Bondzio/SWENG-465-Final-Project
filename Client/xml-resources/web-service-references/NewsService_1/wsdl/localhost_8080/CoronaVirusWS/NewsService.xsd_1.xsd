@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1 (UNKNOWN_BRANCH-false; 2015-01-15T16:53:43+0100) JAXWS-RI/2.2.10 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://news.me.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://news.me.org/">
+
+<xs:element name="NewsLink" type="tns:NewsLink"/>
+
+<xs:element name="NewsLinkResponse" type="tns:NewsLinkResponse"/>
+
+<xs:element name="RandomSafetyTip" type="tns:RandomSafetyTip"/>
+
+<xs:element name="RandomSafetyTipResponse" type="tns:RandomSafetyTipResponse"/>
+
+<xs:complexType name="RandomSafetyTip">
+<xs:sequence>
+<xs:element name="SafetyTip" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="RandomSafetyTipResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="NewsLink">
+<xs:sequence>
+<xs:element name="CDC" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="NewsLinkResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

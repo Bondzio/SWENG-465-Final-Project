@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints version="2.0" xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime">
+  <endpoint implementation="org.me.survey.SurveyService" name="SurveyService" url-pattern="/SurveyService"/>
+  <endpoint implementation="org.me.riskService.RiskService" name="RiskService" url-pattern="/RiskService"/>
+  <endpoint implementation="org.me.news.NewsService" name="NewsService" url-pattern="/NewsService"/>
+  <endpoint implementation="org.me.statistics.StatisticsWS" name="StatisticsWS" url-pattern="/StatisticsWS"/>
+</endpoints>

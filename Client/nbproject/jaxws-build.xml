@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-RiskService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/RiskService"/>
+        <property name="wsdl-RiskService" location="xml-resources/web-service-references/RiskService/wsdl/localhost_8080/CoronaVirusWS/RiskService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/RiskService" destdir="${build.generated.dir}/jax-wsCache/RiskService" wsdl="${wsdl-RiskService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/CoronaVirusWS/RiskService?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-RiskService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/RiskService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/RiskService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-RiskService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/RiskService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/org/me/riskservice"/>
+    </target>
+    <target name="wsimport-client-SurveyService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/SurveyService"/>
+        <property name="wsdl-SurveyService" location="xml-resources/web-service-references/SurveyService/wsdl/localhost_8080/CoronaVirusWS/SurveyService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/SurveyService" destdir="${build.generated.dir}/jax-wsCache/SurveyService" wsdl="${wsdl-SurveyService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/CoronaVirusWS/SurveyService?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-SurveyService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/SurveyService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/SurveyService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-SurveyService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/SurveyService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/org/me/survey"/>
+    </target>
+    <target name="wsimport-client-NewsService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/NewsService"/>
+        <property name="wsdl-NewsService" location="xml-resources/web-service-references/NewsService/wsdl/localhost_8080/CoronaVirusWS/NewsService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/NewsService" destdir="${build.generated.dir}/jax-wsCache/NewsService" wsdl="${wsdl-NewsService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/CoronaVirusWS/NewsService?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-NewsService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/NewsService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/NewsService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-NewsService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/NewsService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/org/me/news"/>
+    </target>
+    <target name="wsimport-client-SurveyService_1" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/SurveyService_1"/>
+        <property name="wsdl-SurveyService_1" location="xml-resources/web-service-references/SurveyService_1/wsdl/localhost_8080/CoronaVirusWS/SurveyService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/SurveyService_1" destdir="${build.generated.dir}/jax-wsCache/SurveyService_1" wsdl="${wsdl-SurveyService_1}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/CoronaVirusWS/SurveyService?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-SurveyService_1}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/SurveyService_1"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/SurveyService_1">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-SurveyService_1" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/SurveyService_1"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/org/me/survey"/>
+    </target>
+    <target name="wsimport-client-RiskService_1" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/RiskService_1"/>
+        <property name="wsdl-RiskService_1" location="xml-resources/web-service-references/RiskService_1/wsdl/localhost_8080/CoronaVirusWS/RiskService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/RiskService_1" destdir="${build.generated.dir}/jax-wsCache/RiskService_1" wsdl="${wsdl-RiskService_1}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/CoronaVirusWS/RiskService?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-RiskService_1}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/RiskService_1"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/RiskService_1">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-RiskService_1" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/RiskService_1"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/org/me/riskservice"/>
+    </target>
+    <target name="wsimport-client-NewsService_1" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/NewsService_1"/>
+        <property name="wsdl-NewsService_1" location="xml-resources/web-service-references/NewsService_1/wsdl/localhost_8080/CoronaVirusWS/NewsService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/NewsService_1" destdir="${build.generated.dir}/jax-wsCache/NewsService_1" wsdl="${wsdl-NewsService_1}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/CoronaVirusWS/NewsService?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-NewsService_1}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/NewsService_1"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/NewsService_1">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-NewsService_1" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/NewsService_1"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/org/me/news"/>
+    </target>
+    <target name="wsimport-client-StatisticsWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/StatisticsWS"/>
+        <property name="wsdl-StatisticsWS" location="xml-resources/web-service-references/StatisticsWS/wsdl/localhost_8084/CoronaVirusWS/StatisticsWS.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/StatisticsWS" destdir="${build.generated.dir}/jax-wsCache/StatisticsWS" wsdl="${wsdl-StatisticsWS}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8084/CoronaVirusWS/StatisticsWS?wsdl" xnocompile="true" xendorsed="true" package="org.me.statistics">
+            <depends file="${wsdl-StatisticsWS}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/StatisticsWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/StatisticsWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-StatisticsWS" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/StatisticsWS"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/org/me/statistics"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-RiskService, wsimport-client-SurveyService, wsimport-client-NewsService, wsimport-client-SurveyService_1, wsimport-client-RiskService_1, wsimport-client-NewsService_1, wsimport-client-StatisticsWS"/>
+</project>

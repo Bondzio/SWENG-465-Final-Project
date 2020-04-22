@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="SurveyService">
+      <implementation-class>org.me.survey.SurveyService</implementation-class>
+    </service>
+    <service name="RiskService">
+      <implementation-class>org.me.riskService.RiskService</implementation-class>
+    </service>
+    <service name="NewsService">
+      <implementation-class>org.me.news.NewsService</implementation-class>
+    </service>
+    <service name="StatisticsWS">
+      <implementation-class>org.me.statistics.StatisticsWS</implementation-class>
+    </service>
+  </services>
+  <clients/>
+  <jsr109>false</jsr109>
+</jax-ws>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/CoronaVirusSurveyWS/SurveyService?wsdl" uri="xml-resources/web-service-references/SurveyService/wsdl/localhost_8080/CoronaVirusSurveyWS/SurveyService.wsdl"/>
+    <system systemId="http://localhost:8080/CoronaVirusSurveyWS/SurveyService?xsd=1" uri="xml-resources/web-service-references/SurveyService/wsdl/localhost_8080/CoronaVirusSurveyWS/SurveyService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/CoronaVirusWS/SurveyService?wsdl" uri="xml-resources/web-service-references/SurveyService_1/wsdl/localhost_8080/CoronaVirusWS/SurveyService.wsdl"/>
+    <system systemId="http://localhost:8080/CoronaVirusWS/SurveyService?xsd=1" uri="xml-resources/web-service-references/SurveyService_1/wsdl/localhost_8080/CoronaVirusWS/SurveyService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/CoronaVirusWS/RiskService?wsdl" uri="xml-resources/web-service-references/RiskService_1/wsdl/localhost_8080/CoronaVirusWS/RiskService.wsdl"/>
+    <system systemId="http://localhost:8080/CoronaVirusWS/RiskService?xsd=1" uri="xml-resources/web-service-references/RiskService_1/wsdl/localhost_8080/CoronaVirusWS/RiskService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/CoronaVirusWS/NewsService?wsdl" uri="xml-resources/web-service-references/NewsService_1/wsdl/localhost_8080/CoronaVirusWS/NewsService.wsdl"/>
+    <system systemId="http://localhost:8080/CoronaVirusWS/NewsService?xsd=1" uri="xml-resources/web-service-references/NewsService_1/wsdl/localhost_8080/CoronaVirusWS/NewsService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/CoronaVirusWS/StatisticsWS?wsdl" uri="xml-resources/web-service-references/StatisticsWS_1/wsdl/localhost_8080/CoronaVirusWS/StatisticsWS.wsdl"/>
+    <system systemId="http://localhost:8080/CoronaVirusWS/StatisticsWS?xsd=1" uri="xml-resources/web-service-references/StatisticsWS_1/wsdl/localhost_8080/CoronaVirusWS/StatisticsWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8084/CoronaVirusWS/StatisticsWS?wsdl" uri="xml-resources/web-service-references/StatisticsWS/wsdl/localhost_8084/CoronaVirusWS/StatisticsWS.wsdl"/>
+    <system systemId="http://localhost:8084/CoronaVirusWS/StatisticsWS?xsd=1" uri="xml-resources/web-service-references/StatisticsWS/wsdl/localhost_8084/CoronaVirusWS/StatisticsWS.xsd_1.xsd"/>
+</catalog>

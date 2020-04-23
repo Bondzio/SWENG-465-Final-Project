@@ -97,8 +97,18 @@ public class StatisticsGUI extends javax.swing.JFrame {
         });
 
         infectedButton.setText("Most Infected");
+        infectedButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                infectedButtonActionPerformed(evt);
+            }
+        });
 
         newCasesButton.setText("Most New Cases");
+        newCasesButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                newCasesButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -199,6 +209,14 @@ public class StatisticsGUI extends javax.swing.JFrame {
     private void globalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_globalButtonActionPerformed
         jTextArea1.setText(getGlobalData() + "\n");
     }//GEN-LAST:event_globalButtonActionPerformed
+
+    private void infectedButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_infectedButtonActionPerformed
+        jTextArea1.setText(getMostInfected() + "\n");
+    }//GEN-LAST:event_infectedButtonActionPerformed
+
+    private void newCasesButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newCasesButtonActionPerformed
+        jTextArea1.setText(getMostNewCases() + "\n");
+    }//GEN-LAST:event_newCasesButtonActionPerformed
 
     /**
      * @param args the command line arguments

@@ -178,11 +178,17 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Most Infected"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="infectedButtonActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="newCasesButton">
           <Properties>
             <Property name="text" type="java.lang.String" value="Most New Cases"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="newCasesButtonActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>

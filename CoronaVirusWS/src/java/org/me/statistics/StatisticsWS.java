@@ -134,8 +134,38 @@ public class StatisticsWS {
      */
     @WebMethod(operationName = "getMostInfected")
     public String getMostInfections() {
-        //TODO write your implementation code here:
-        return null;
+        try {
+            URL url = new URL("https://api.covid19api.com/summary");
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+
+            connection.setRequestMethod("GET");
+            connection.connect();
+
+            int code = connection.getResponseCode();
+            InputStream inputStream = connection.getInputStream();
+
+            String response = null;
+            try (Scanner scanner = new Scanner(inputStream, StandardCharsets.UTF_8.name())) {
+                response = scanner.useDelimiter("\\A").next();
+            }
+
+            Gson g = new Gson();
+            CovidData cd = g.fromJson(response, CovidData.class);
+            
+            int index = 0;
+
+            for (int i = 0; i < cd.Countries.size(); i++) {
+                if (cd.Countries.get(i).TotalConfirmed > cd.Countries.get(index).TotalDeaths) {
+                    if(!cd.Countries.get(i).Country.equals("Global"))
+                        index = i;
+                }
+            }
+            
+            return cd.Countries.get(index).toString();
+
+        } catch (Exception e) {
+        }
+        return "Error";
     }
 
     /**
@@ -143,7 +173,37 @@ public class StatisticsWS {
      */
     @WebMethod(operationName = "getMostNewCases")
     public String getMostNewCases() {
-        //TODO write your implementation code here:
-        return null;
+        try {
+            URL url = new URL("https://api.covid19api.com/summary");
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+
+            connection.setRequestMethod("GET");
+            connection.connect();
+
+            int code = connection.getResponseCode();
+            InputStream inputStream = connection.getInputStream();
+
+            String response = null;
+            try (Scanner scanner = new Scanner(inputStream, StandardCharsets.UTF_8.name())) {
+                response = scanner.useDelimiter("\\A").next();
+            }
+
+            Gson g = new Gson();
+            CovidData cd = g.fromJson(response, CovidData.class);
+            
+            int index = 0;
+
+            for (int i = 0; i < cd.Countries.size(); i++) {
+                if (cd.Countries.get(i).NewConfirmed > cd.Countries.get(index).NewConfirmed) {
+                    if(!cd.Countries.get(i).Country.equals("Global"))
+                        index = i;
+                }
+            }
+            
+            return cd.Countries.get(index).toString();
+
+        } catch (Exception e) {
+        }
+        return "Error";
     }
 }
